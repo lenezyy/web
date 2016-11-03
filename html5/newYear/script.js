@@ -46,20 +46,15 @@ window.onload = function (){
 		page1 = document.getElementById("page1");
 		page2 = document.getElementById("page2");
 		page3 = document.getElementById("page3");
-		page1.onclick = function (){
-			//console.log("here");
+		page1.addEventListener("touchstart",function (){
+			page1.style.display = "none";
+			page2.style.display = "block";
 			
-			//if (page1.style.display == 'block')
-			//{
-					//console.log("there");
-					page1.style.display = "none";
-					page2.style.display = "block"
-			//}
-			/*
 			setTimeout(function(){
 				page2.className = "page fadeOut";
 				page3.className = "page fadeIn";
 			},5500);
-			*/
-		};
+			},false); 
+			
+		
 };
